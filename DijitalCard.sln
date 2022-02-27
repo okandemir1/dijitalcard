@@ -5,17 +5,17 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{63AED624-FDBF-467A-A1F9-1069A58C56E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.WebUI.Management", "WebUI\DijitalCard.WebUI.Management\DijitalCard.WebUI.Management.csproj", "{808916D9-4A89-4D6F-93D2-01E8B414E1BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.WebUI.Management", "WebUI\DijitalCard.WebUI.Management\DijitalCard.WebUI.Management.csproj", "{808916D9-4A89-4D6F-93D2-01E8B414E1BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.WebUI.Site", "WebUI\DijitalCard.WebUI.Site\DijitalCard.WebUI.Site.csproj", "{C6A4DD32-F0EC-466C-96DD-CB4A40166876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.WebUI.Site", "WebUI\DijitalCard.WebUI.Site\DijitalCard.WebUI.Site.csproj", "{C6A4DD32-F0EC-466C-96DD-CB4A40166876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Model", "DijitalCard.Model\DijitalCard.Model.csproj", "{A56531FF-0E61-46C7-A219-DCA0E1BCC196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Model", "DijitalCard.Model\DijitalCard.Model.csproj", "{A56531FF-0E61-46C7-A219-DCA0E1BCC196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Data", "DijitalCard.Data\DijitalCard.Data.csproj", "{8C90F89D-9D5A-49DA-B6C0-A47DECD80B6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Data", "DijitalCard.Data\DijitalCard.Data.csproj", "{8C90F89D-9D5A-49DA-B6C0-A47DECD80B6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{BE7BD9A0-7E1A-4294-AB32-6C70C1AC650E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Api.Restful", "DijitalCard.Api.Restful\DijitalCard.Api.Restful.csproj", "{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Api.Restful", "DijitalCard.Api.Restful\DijitalCard.Api.Restful.csproj", "{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9897A323-98CC-4C4E-A3F9-913F9435EDE5}"
 EndProject
@@ -23,19 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{24A5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{C9069B38-EF22-40F3-ADFA-D7EC2AEF477A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure", "Infrastructure\DijitalCard.Infrastructure\DijitalCard.Infrastructure.csproj", "{8483DCF9-128B-4B17-9C97-76F7CD6B64B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Infrastructure.Extensions", "Infrastructure\DijitalCard.Infrastructure.Extensions\DijitalCard.Infrastructure.Extensions.csproj", "{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.Extensions", "Infrastructure\DijitalCard.Infrastructure.Extensions\DijitalCard.Infrastructure.Extensions.csproj", "{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Infrastructure.Caching.MemoryCaching", "Infrastructure\Caching\DijitalCard.Infrastructure.Caching.MemoryCaching\DijitalCard.Infrastructure.Caching.MemoryCaching.csproj", "{DD443AE3-4630-46CD-8674-052EBB5F47BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.Caching.DummyCache", "Infrastructure\Caching\DijitalCard.Infrastructure.Caching.DummyCache\DijitalCard.Infrastructure.Caching.DummyCache.csproj", "{1542A416-F918-4B19-BC96-B92327152CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.Infrastructure.Logging.Serilog.ElasticLog", "Infrastructure\Logging\DijitalCard.Infrastructure.Logging.Serilog.ElasticLog\DijitalCard.Infrastructure.Logging.Serilog.ElasticLog.csproj", "{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.Caching.MemoryCaching", "Infrastructure\Caching\DijitalCard.Infrastructure.Caching.MemoryCaching\DijitalCard.Infrastructure.Caching.MemoryCaching.csproj", "{DD443AE3-4630-46CD-8674-052EBB5F47BD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.LoggingDummyLog", "Infrastructure\Logging\DijitalCard.Infrastructure.LoggingDummyLog\DijitalCard.Infrastructure.LoggingDummyLog.csproj", "{170ACA8D-F8B2-47CA-8576-1D389F8EF49E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.Logging.Serilog.ElasticLog", "Infrastructure\Logging\DijitalCard.Infrastructure.Logging.Serilog.ElasticLog\DijitalCard.Infrastructure.Logging.Serilog.ElasticLog.csproj", "{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijitalCard.Infrastructure.Interfaces", "Infrastructure\DijitalCard.Infrastructure.Interfaces\DijitalCard.Infrastructure.Interfaces.csproj", "{3E7A3EC2-114C-4586-AE34-975D9BD3B85D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijitalCard.WebUI.Infrastructure", "WebUI\DijitalCard.WebUI.Infrastructure\DijitalCard.WebUI.Infrastructure.csproj", "{B9D909F2-FAF5-4F2C-A8AC-D223952D4762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,34 +57,22 @@ Global
 		{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8483DCF9-128B-4B17-9C97-76F7CD6B64B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8483DCF9-128B-4B17-9C97-76F7CD6B64B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8483DCF9-128B-4B17-9C97-76F7CD6B64B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8483DCF9-128B-4B17-9C97-76F7CD6B64B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3193B73B-1279-4A30-A0E7-68D0A41CDDC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1542A416-F918-4B19-BC96-B92327152CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1542A416-F918-4B19-BC96-B92327152CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1542A416-F918-4B19-BC96-B92327152CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1542A416-F918-4B19-BC96-B92327152CB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD443AE3-4630-46CD-8674-052EBB5F47BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD443AE3-4630-46CD-8674-052EBB5F47BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD443AE3-4630-46CD-8674-052EBB5F47BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD443AE3-4630-46CD-8674-052EBB5F47BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{170ACA8D-F8B2-47CA-8576-1D389F8EF49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{170ACA8D-F8B2-47CA-8576-1D389F8EF49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{170ACA8D-F8B2-47CA-8576-1D389F8EF49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{170ACA8D-F8B2-47CA-8576-1D389F8EF49E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7472215D-B1CC-4E29-AED7-060B0B4B1FDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E7A3EC2-114C-4586-AE34-975D9BD3B85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E7A3EC2-114C-4586-AE34-975D9BD3B85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E7A3EC2-114C-4586-AE34-975D9BD3B85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E7A3EC2-114C-4586-AE34-975D9BD3B85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D909F2-FAF5-4F2C-A8AC-D223952D4762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D909F2-FAF5-4F2C-A8AC-D223952D4762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D909F2-FAF5-4F2C-A8AC-D223952D4762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D909F2-FAF5-4F2C-A8AC-D223952D4762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,13 +83,10 @@ Global
 		{88C1510E-2998-4F40-A5D8-4AEE93CBCCE1} = {BE7BD9A0-7E1A-4294-AB32-6C70C1AC650E}
 		{24A55667-79E1-4037-A1BB-E32EB5A659CA} = {9897A323-98CC-4C4E-A3F9-913F9435EDE5}
 		{C9069B38-EF22-40F3-ADFA-D7EC2AEF477A} = {9897A323-98CC-4C4E-A3F9-913F9435EDE5}
-		{8483DCF9-128B-4B17-9C97-76F7CD6B64B0} = {9897A323-98CC-4C4E-A3F9-913F9435EDE5}
 		{3193B73B-1279-4A30-A0E7-68D0A41CDDC0} = {9897A323-98CC-4C4E-A3F9-913F9435EDE5}
-		{1542A416-F918-4B19-BC96-B92327152CB2} = {24A55667-79E1-4037-A1BB-E32EB5A659CA}
 		{DD443AE3-4630-46CD-8674-052EBB5F47BD} = {24A55667-79E1-4037-A1BB-E32EB5A659CA}
-		{170ACA8D-F8B2-47CA-8576-1D389F8EF49E} = {C9069B38-EF22-40F3-ADFA-D7EC2AEF477A}
 		{7472215D-B1CC-4E29-AED7-060B0B4B1FDF} = {C9069B38-EF22-40F3-ADFA-D7EC2AEF477A}
-		{3E7A3EC2-114C-4586-AE34-975D9BD3B85D} = {9897A323-98CC-4C4E-A3F9-913F9435EDE5}
+		{B9D909F2-FAF5-4F2C-A8AC-D223952D4762} = {63AED624-FDBF-467A-A1F9-1069A58C56E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7545D1C5-20A4-4C20-A36C-C47915AE759C}

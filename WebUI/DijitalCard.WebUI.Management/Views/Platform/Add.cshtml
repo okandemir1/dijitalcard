@@ -1,0 +1,43 @@
+﻿@model DijitalCard.Model.Platform
+@{
+    var title = "Platform Ekle";
+    ViewBag.Title = title;
+}
+
+<div class="container-fluid">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@title</h1>
+        <a href="@Url.Action("Index","Platform")" class="btn btn-sm btn-primary shadow-sm">Listeye Dön</a>
+    </div>
+    <p class="mb-4">
+        Burada yeni platform eklerim
+    </p>
+
+    @Html.Raw(ViewResultExtension.ViewResult(ViewBag.Result))
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form action="/Platform/Add" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-user" placeholder="Platform Adı" name="Name" value="@Model.Name">
+                </div>
+               
+                <div class="form-group">
+                    <input type="file" class="form-control" name="file" />
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-lg-2 text-right">Aktif Mi?</label>
+                    <div class="col-lg-10">
+                        @Html.CheckBoxFor(a => a.IsActive, new { @class = "checkbox" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Ekle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

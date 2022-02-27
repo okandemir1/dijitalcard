@@ -1,0 +1,56 @@
+﻿@model RegisterModel
+@{
+    ViewBag.Title = "Kullanıcı Kayıt Ol Ekranı";
+}
+
+<div class="info">
+    <h1>Diji Karta Kayıt Ol</h1>
+</div>
+
+<div class="error_box">
+    @if(ViewBag.Errors != null)
+    {
+        <ul class="alert alert-danger">
+            @foreach (var item in ViewBag.Errors)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    }
+</div>
+
+<form method="post" action="/Account/Register" enctype="multipart/form-data">
+    <div class="form">
+        <div class="form_box">
+            <label>Fotoğraf Seç</label>
+            <input type="file" class="form-control" name="imagePath" />
+        </div>
+        <div class="form_box">
+            <label for="username">Kullanıcı Adı</label>
+            <input type="text" id="username" name="Username" placeholder="Kullanıcı Adı" value="@Model.Username" />
+        </div>
+        <div class="form_box">
+            <label for="password">Şifre</label>
+            <input type="password" id="password" placeholder="Şifre" name="Password" value="" />
+        </div>
+        <div class="form_box">
+            <label for="rpassword">Şifre Tekrar</label>
+            <input type="password" id="rpassword" placeholder="Şifre Tekrar" name="RPassword" value="" />
+        </div>
+        <div class="form_box">
+            <label for="fullname">Adınız Soyadınız</label>
+            <input type="text" id="fullname" name="Fullname" placeholder="Adınız Soyadınız" value="@Model.Fullname" />
+        </div>
+        <div class="form_box">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required placeholder="Email" value="@Model.Email" />
+        </div>
+        <div class="form_box">
+            <label for="title">Ünvan</label>
+            <input type="text" id="title" name="Title" placeholder="Ünvan" value="@Model.Title" />
+        </div>
+        <div class="form_button">
+            <button type="submit">Kayıt Ol</button>
+        </div>
+    </div>
+</form>

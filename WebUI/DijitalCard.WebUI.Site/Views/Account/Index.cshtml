@@ -1,0 +1,37 @@
+﻿@model AccountViewModel
+@{
+    var fullname = Model.Account.Fullname;
+    ViewBag.Title = $"{fullname} isimli kullanıcnın dijital kart sayfası";
+}
+
+<div class="avatar">
+    <img src="@Model.Account.ImagePath" width="150" height="150" alt="@fullname" title="@fullname" />
+</div>
+<div class="info">
+    <h1>@fullname</h1>
+    <p>@Model.Account.Title</p>
+</div>
+
+@if(Model.HasLogged){
+    <div>
+        <a href="@Url.Action("Index","Platform")">Kayıtlı Platformlar</a>
+    </div>
+}
+
+<div class="row">
+    @foreach (var item in Model.AccountPlatforms)
+    {
+        var platform = cache.Platforms.Where(x => x.Id == item.PlatformId).FirstOrDefault();
+        if(platform != null)
+        {
+            <div class="col-6">
+                <a href="@item.Description" title="@platform.Name">
+                    <div class="platform_image">
+                        <img src="@platform.ImagePath" width="150" height="150" alt="t" title="t" />
+                    </div>
+                    <p>@platform.Name</p>
+                </a>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    @RenderSection("styles", false)
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div>Menü</div>
+            <div>Logo</div>
+            <div>Paylaş</div>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Dijital Kart Al</a></li>
+                <li><a href="#">İletişime Geç</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    
+
+</body>
+</html>

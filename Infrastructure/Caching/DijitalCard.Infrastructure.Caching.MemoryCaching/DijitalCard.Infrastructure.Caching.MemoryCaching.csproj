@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WebUI\DijitalCard.WebUI.Infrastructure\DijitalCard.WebUI.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,36 @@
+﻿@model LoginModel
+@{
+    ViewBag.Title = "Kullanıcı Giriş Sayfası";
+}
+
+<div class="info">
+    <h1>Diji Karta Giriş Yap</h1>
+</div>
+
+<div class="error_box">
+    @if(ViewBag.Errors != null)
+    {
+        <ul class="alert alert-danger">
+            @foreach (var item in ViewBag.Errors)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    }
+</div>
+
+<form method="post" action="/Account/Login">
+    <div class="form">
+        <div class="form_box">
+            <label for="username">Kullanıcı Adı</label>
+            <input type="text" id="username" name="Username" placeholder="Kullanıcı Adı" value="@Model.Username" />
+        </div>
+        <div class="form_box">
+            <label for="password">Şifre</label>
+            <input type="password" id="password" placeholder="Şifre" name="Password" value="" />
+        </div>
+        <div class="form_button">
+            <button type="submit">Giriş Yap</button>
+        </div>
+    </div>
+</form>
